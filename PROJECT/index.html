@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Amazon</div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProduct()">Search</button>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Account</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart 🛒 <span id="cart-count">0</span></a>
+        </div>
+    </header>
+<!-- 
+    Hero Section -->
+    <section class="hero">
+        <img src="shopingphoto(8) - Copy.png">
+        <h1>Welcome to Amazon Clone</h1>
+        <p>Best Deals On Electronics, Fashion & More</p>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products" id="product-container">
+
+        <!-- 20+ Products -->
+
+        <div class="card">
+            <img src="smartphone.jpg">
+            <h3>Smart Phone</h3>
+            <p>₹15,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Smart Phone')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="laptop.jpg">
+            <h3>Laptop</h3>
+            <p>₹55,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Laptop')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="headphones.jpg">
+            <h3>Headphones</h3>
+            <p>₹1,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Headphones')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="watch.jpg">
+            <h3>Watch</h3>
+            <p>₹2,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Watch')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="Keyboard (2).jpg">
+            <h3>Keyboard</h3>
+            <p>₹899</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Keyboard')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="mouse (2).jpg">
+            <h3>Mouse</h3>
+            <p>₹599</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Mouse')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="gamingchair.jpg">
+            <h3>Gaming Chair</h3>
+            <p>₹8,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Gaming Chair')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="tablets.jpg">
+            <h3>Tablet</h3>
+            <p>₹18,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Tablet')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="camera.jpg">
+            <h3>Camera</h3>
+            <p>₹25,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Camera')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="bluetoothspeaker.jpg">
+            <h3>Bluetooth Speaker</h3>
+            <p>₹1,499</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Bluetooth Speaker')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="tv.jpg">
+            <h3>TV</h3>
+            <p>₹45,000</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('TV')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="shoes.jpg">
+            <h3>Shoes</h3>
+            <p>₹2,499</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Shoes')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="bag.jpg">
+            <h3>Bag</h3>
+            <p>₹1,299</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Bag')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="powerbank.jpg">
+            <h3>Power Bank</h3>
+            <p>₹999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Power Bank')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="monitor.jpg">
+            <h3>Monitor</h3>
+            <p>₹9,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Monitor')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="printer.jpg">
+            <h3>Printer</h3>
+            <p>₹6,500</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Printer')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="fan.jpg">
+            <h3>Fan</h3>
+            <p>₹2,200</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Fan')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="airpods.jpg">
+            <h3>Airpods</h3>
+            <p>₹3,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Airpods')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="micrphones.jpg">
+            <h3>Microphone</h3>
+            <p>₹2,799</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Microphone')">Place Order</button>
+        </div>
+
+        <div class="card">
+            <img src="router.jpg">
+            <h3>Router</h3>
+            <p>₹1,899</p>
+            <button onclick="addToCart()">Add To Cart</button>
+            <button onclick="placeOrder('Router')">Place Order</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer>
+        <p>© 2026 Amazon Clone | Built with HTML CSS JS</p>
+    </footer> -->
+    <!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-top">
+        <div class="footer-column">
+            <h3>Get to Know Us</h3>
+            <a href="#">About Amazon</a>
+            <a href="#">Careers</a>
+            <a href="#">Press Releases</a>
+            <a href="#">Amazon Science</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Make Money with Us</h3>
+            <a href="#">Sell on Amazon</a>
+            <a href="#">Protect and Build Your Brand</a>
+            <a href="#">Amazon Global Selling</a>
+            <a href="#">Become an Affiliate</a>
+            <a href="#">Advertise Your Products</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Let Us Help You</h3>
+            <a href="#">Your Account</a>
+            <a href="#">Returns Centre</a>
+            <a href="#">100% Purchase Protection</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-middle">
+        <h2 class="footer-logo">amazon</h2>
+
+        <div class="footer-buttons">
+            <button>🌐 English</button>
+            <button>🇮🇳 India</button>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-box">
+            <h4>AbeBooks</h4>
+            <p>Books, art<br>& collectibles</p>
+        </div>
+
+        <div class="footer-bottom-box">
+            <h4>Amazon Web Services</h4>
+            <p>Scalable Cloud<br>Computing Services</p>
+        </div>
+
+        <div class="footer-bottom-box">
+            <h4>Audible</h4>
+            <p>Download<br>Audio Books</p>
+        </div>
+
+        <div class="footer-bottom-box">
+            <h4>IMDb</h4>
+            <p>Movies, TV<br>& Celebrities</p>
+        </div>
+    </div>
+
+    <div class="footer-last">
+        <p>Conditions of Use & Sale &nbsp; Privacy Notice &nbsp; Interest-Based Ads</p>
+        <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
